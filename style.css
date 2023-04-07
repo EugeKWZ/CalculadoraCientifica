@@ -1,25 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Rubik', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: black;
+  letter-spacing: 3px;
+}
+
+header{
+  color: white;
+  font-size: small;
 }
 
 input {
   text-align: right;
-  background-color: white;
-  width: 330px;
+  background-color:  rgb(69, 69, 69);
+  width: 260px;
   margin-bottom: 10px;
   font-size: 40px;
   border:none;
+  color: white;
+  letter-spacing: 2px;
 }
 
 table {
   display: inline-block;
-  padding: 30px;
-  background-color: rgb(174, 173, 173);
+  padding: 15px 10px;
+  background-color: rgb(69, 69, 69);
+  border-radius: 15px;
 }
 
 .displaytable {
@@ -31,10 +41,15 @@ table {
 }
 
 .button {
-  width: 60px;
-  height: 35px;
+  width: 50px;
+  height: 30px;
   font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
   border:none;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.128);
 }
 
 .blackbutton {
@@ -43,17 +58,40 @@ table {
 }
 
 .greenbutton {
-  background-color: #2221567b;
+  background-color: #2222227b;
 }
 
 .greybutton {
-  background-color: #cccccc;
+  background-color: #202020;
 }
 
 .bluebutton {
-  background-color: #1d2d5ac6;
+  background-color:transparent;
+  box-shadow: none;
 }
 
 .redbutton {
-  background-color: #750202;
+  background-color: #514f4f;
+}
+
+#bDelete .redbutton{
+  background-color: #850d0d;
+}
+
+#bDelete .redbutton:hover{
+  background-color: #780d0d;
+}
+
+#bDelete img{
+  margin: 4px auto;
+  width: 20px;
+}
+
+#bEquals{
+  background-color: rgb(9, 198, 9);
+  border-radius: 15px;
+}
+
+#bEquals:hover{
+  background-color: rgb(12, 173, 12);
 }

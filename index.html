@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="logic.js"></script>
     <title>Calculadora científica</title>
+    <link rel="shortcut icon" href="iconcalculator.png" type="image/x-icon">
 </head>
 
 <body>
@@ -18,6 +19,7 @@
         <table>
             <tr>
                 <th colspan="5">
+                    <span>=</span>
                     <input id="displayBox" type="text" readonly>
                 </th>
             </tr>
@@ -120,7 +122,7 @@
                 </td>
                 <td>
                     <div class="displaytable-cell" id="bDelete">
-                        <button class="button redbutton" type="button" onclick="calculadora.eraseLastInput()">Del</button>
+                        <button class="button redbutton" type="button" onclick="calculadora.eraseLastInput()"><img src="iconborrar.png" alt=""></button>
                     </div>
                 </td>
                 <td>
